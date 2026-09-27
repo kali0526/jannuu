@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>For My Januuu 💜</title>
+
+
+    <style>
+
+        /* =====================================================
+           COLORS
+        ===================================================== */
+
+        :root {
+
+            --purple-dark: #16002b;
+            --purple-deep: #240046;
+            --purple: #7b2cbf;
+            --purple-light: #c77dff;
+            --lavender: #eadcff;
+            --pink: #ff8fab;
+            --white: #ffffff;
+
+        }
+
+
+        /* =====================================================
+           BASIC RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            min-height: 100vh;
+
+            font-family:
+                "Poppins",
+                "Segoe UI",
+                Arial,
+                sans-serif;
+
+            color: white;
+
+            overflow-x: hidden;
+
+            background:
+
+                radial-gradient(
+                    circle at 10% 10%,
+                    rgba(199, 125, 255, 0.45),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 90% 85%,
+                    rgba(255, 143, 171, 0.35),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 50% 50%,
+                    #5a189a,
+                    #240046 75%
+                );
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: flex-start;
+
+            padding:
+                35px 15px 80px;
+
+        }
+
+
+        /* =====================================================
+           BACKGROUND STARS
+        ===================================================== */
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            opacity: 0.35;
+
+            background-image:
+
+                radial-gradient(
+                    circle,
+                    white 1px,
+                    transparent 1px
+                );
+
+            background-size:
+                75px 75px;
+
+            animation:
+                starsMove 20s linear infinite;
+
+        }
+
+
+        @keyframes starsMove {
+
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(75px);
+            }
+
+        }
+
+
+        /* =====================================================
+           MAIN CARD
+        ===================================================== */
+
+        .main-card {
+
+            position: relative;
+
+            z-index: 2;
+
+            width:
+                min(94vw, 900px);
+
+            padding:
+                35px 22px 50px;
+
+            border-radius: 35px;
+
+            background:
+                rgba(255, 255, 255, 0.10);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.20);
+
+            backdrop-filter:
+                blur(20px);
+
+            -webkit-backdrop-filter:
+                blur(20px);
+
+            box-shadow:
+
+                0 30px 80px
+                rgba(0, 0, 0, 0.45);
+
+            text-align: center;
+
+        }
+
+
+        /* =====================================================
+           TITLE
+        ===================================================== */
+
+        .title {
+
+            margin:
+                0 0 8px;
+
+            font-size:
+                clamp(35px, 7vw, 60px);
+
+            font-weight:
+                800;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    #ffffff,
+                    #e0aaff,
+                    #ffb3c6,
+                    #ffffff
+                );
+
+            background-size:
+                250% auto;
+
+            -webkit-background-clip:
+                text;
+
+            background-clip:
+                text;
+
+            color:
+                transparent;
+
+            animation:
+                titleShine 5s linear infinite;
+
+        }
+
+
+        @keyframes titleShine {
+
+            from {
+                background-position: 0% center;
+            }
+
+            to {
+                background-position: 250% center;
+            }
+
+        }
+
+
+        .subtitle {
+
+            margin:
+                0 0 25px;
+
+            color:
+                #f3e8ff;
+
+            font-size:
+                clamp(14px, 2.5vw, 18px);
+
+        }
+
+
+        /* =====================================================
+           MESSAGE BOX
+        ===================================================== */
+
+        #messageBox {
+
+            width:
+                min(92%, 760px);
+
+            min-height:
+                155px;
+
+            margin:
+                10px auto 20px;
+
+            padding:
+                25px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                25px;
+
+            background:
+                rgba(255, 255, 255, 0.12);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.20);
+
+            box-shadow:
+
+                inset 0 0 30px
+                rgba(255,255,255,0.03),
+
+                0 15px 40px
+                rgba(0,0,0,0.20);
+
+            color:
+                white;
+
+            font-size:
+                clamp(18px, 3vw, 25px);
+
+            line-height:
+                1.7;
+
+            animation:
+                messageIn .5s ease;
+
+        }
+
+
+        @keyframes messageIn {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(15px)
+                    scale(.98);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0)
+                    scale(1);
+
+            }
+
+        }
+
+
+        /* =====================================================
+           BUTTONS
+        ===================================================== */
+
+        .controls {
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            gap:
+                14px;
+
+            margin:
+                20px 0 12px;
+
+        }
+
+
+        button {
+
+            border:
+                none;
+
+            padding:
+                12px 24px;
+
+            border-radius:
+                15px;
+
+            color:
+                white;
+
+            font-size:
+                16px;
+
+            font-weight:
+                700;
+
+            cursor:
+                pointer;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #7b2cbf,
+                    #c77dff
+                );
+
+            box-shadow:
+
+                0 8px 25px
+                rgba(199,125,255,.35);
+
+            transition:
+                .2s ease;
+
+        }
+
+
+        button:hover {
+
+            transform:
+                translateY(-3px);
+
+            box-shadow:
+
+                0 14px 35px
+                rgba(199,125,255,.5);
+
+        }
+
+
+        button:active {
+
+            transform:
+                scale(.95);
+
+        }
+
+
+        button:disabled {
+
+            opacity:
+                .35;
+
+            cursor:
+                not-allowed;
+
+            transform:
+                none;
+
+            box-shadow:
+                none;
+
+        }
+
+
+        /* =====================================================
+           MUSIC STATUS
+        ===================================================== */
+
+        .music-status {
+
+            min-height:
+                25px;
+
+            margin:
+                10px 0 0;
+
+            color:
+                #eadcff;
+
+            font-size:
+                13px;
+
+            opacity:
+                .8;
+
+        }
+
+
+        /* =====================================================
+           MEMORY SECTION
+        ===================================================== */
+
+        .memories-title {
+
+            margin-top:
+                45px;
+
+            margin-bottom:
+                5px;
+
+            font-size:
+                25px;
+
+            font-weight:
+                700;
+
+            color:
+                #f5e6ff;
+
+        }
+
+
+        .memories-subtitle {
+
+            color:
+                #d9bfff;
+
+            font-size:
+                14px;
+
+            margin-bottom:
+                15px;
+
+        }
+
+
+        /* =====================================================
+           FLOATING ORBIT
+        ===================================================== */
+
+        .memory-space {
+
+            position:
+                relative;
+
+            width:
+                min(90vw, 700px);
+
+            height:
+                430px;
+
+            margin:
+                0 auto;
+
+            perspective:
+                1000px;
+
+        }
+
+
+        /* glowing center */
+
+        .memory-space::before {
+
+            content:
+                "💜";
+
+            position:
+                absolute;
+
+            left:
+                50%;
+
+            top:
+                50%;
+
+            transform:
+                translate(-50%, -50%);
+
+            width:
+                115px;
+
+            height:
+                115px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            border-radius:
+                50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(199,125,255,.35),
+                    rgba(123,44,191,.08),
+                    transparent 70%
+                );
+
+            box-shadow:
+
+                0 0 40px
+                rgba(199,125,255,.35),
+
+                inset 0 0 35px
+                rgba(255,255,255,.05);
+
+            font-size:
+                42px;
+
+            z-index:
+                1;
+
+        }
+
+
+        /* orbit ring */
+
+        .memory-space::after {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            left:
+                50%;
+
+            top:
+                50%;
+
+            width:
+                300px;
+
+            height:
+                300px;
+
+            transform:
+                translate(-50%, -50%)
+                rotateX(65deg);
+
+            border:
+                1px solid
+                rgba(224,170,255,.35);
+
+            border-radius:
+                50%;
+
+            box-shadow:
+                0 0 25px
+                rgba(199,125,255,.15);
+
+        }
+
+
+        .memory {
+
+            position:
+                absolute;
+
+            width:
+                180px;
+
+            height:
+                180px;
+
+            left:
+                50%;
+
+            top:
+                50%;
+
+            margin-left:
+                -90px;
+
+            margin-top:
+                -90px;
+
+            border-radius:
+                50%;
+
+            overflow:
+                hidden;
+
+            border:
+                4px solid
+                rgba(255,255,255,.7);
+
+            box-shadow:
+
+                0 15px 35px
+                rgba(0,0,0,.45),
+
+                0 0 25px
+                rgba(199,125,255,.35);
+
+            cursor:
+                pointer;
+
+            z-index:
+                5;
+
+            animation:
+                float 4s ease-in-out infinite;
+
+            transition:
+                transform .35s ease,
+                box-shadow .35s ease;
+
+        }
+
+
+        .memory:hover {
+
+            transform:
+                scale(1.10);
+
+            box-shadow:
+
+                0 20px 45px
+                rgba(0,0,0,.55),
+
+                0 0 40px
+                rgba(224,170,255,.65);
+
+        }
+
+
+        .memory img {
+
+            width:
+                100%;
+
+            height:
+                100%;
+
+            object-fit:
+                cover;
+
+            display:
+                block;
+
+        }
+
+
+        /* positions */
+
+        .memory:nth-child(1) {
+
+            transform:
+                translate(-230px, -45px);
+
+            animation-delay:
+                0s;
+
+        }
+
+
+        .memory:nth-child(2) {
+
+            transform:
+                translate(50px, -115px);
+
+            animation-delay:
+                1s;
+
+        }
+
+
+        .memory:nth-child(3) {
+
+            transform:
+                translate(50px, 95px);
+
+            animation-delay:
+                2s;
+
+        }
+
+
+        @keyframes float {
+
+            0%,
+            100% {
+
+                margin-top:
+                    -90px;
+
+            }
+
+            50% {
+
+                margin-top:
+                    -102px;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           FINAL MESSAGE
+        ===================================================== */
+
+        .final-message {
+
+            color:
+                #ffd6ff;
+
+            font-weight:
+                800;
+
+            font-size:
+                clamp(18px, 3.3vw, 28px);
+
+            line-height:
+                1.8;
+
+            text-shadow:
+
+                0 0 8px #e0aaff,
+
+                0 0 20px #c77dff,
+
+                0 0 35px #9d4edd;
+
+            animation:
+                glow 1.8s infinite alternate;
+
+        }
+
+
+        @keyframes glow {
+
+            from {
+
+                text-shadow:
+
+                    0 0 8px #e0aaff,
+
+                    0 0 15px #c77dff;
+
+            }
+
+            to {
+
+                text-shadow:
+
+                    0 0 15px #ffffff,
+
+                    0 0 30px #c77dff,
+
+                    0 0 45px #9d4edd;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           FALLING HEARTS
+        ===================================================== */
+
+        .heart {
+
+            position:
+                fixed;
+
+            top:
+                -40px;
+
+            pointer-events:
+                none;
+
+            z-index:
+                9999;
+
+            animation:
+                fall linear forwards;
+
+        }
+
+
+        @keyframes fall {
+
+            to {
+
+                transform:
+                    translateY(110vh)
+                    rotate(360deg);
+
+                opacity:
+                    0;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           LIGHTBOX
+        ===================================================== */
+
+        .lightbox {
+
+            position:
+                fixed;
+
+            inset:
+                0;
+
+            display:
+                none;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            z-index:
+                10000;
+
+            padding:
+                20px;
+
+            background:
+                rgba(10, 0, 20, .93);
+
+            cursor:
+                pointer;
+
+        }
+
+
+        .lightbox.show {
+
+            display:
+                flex;
+
+        }
+
+
+        .lightbox img {
+
+            max-width:
+                92vw;
+
+            max-height:
+                88vh;
+
+            border-radius:
+                22px;
+
+            box-shadow:
+
+                0 25px 70px
+                rgba(0,0,0,.75);
+
+            animation:
+                zoomIn .3s ease;
+
+        }
+
+
+        @keyframes zoomIn {
+
+            from {
+
+                transform:
+                    scale(.75);
+
+                opacity:
+                    0;
+
+            }
+
+            to {
+
+                transform:
+                    scale(1);
+
+                opacity:
+                    1;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 650px) {
+
+            body {
+
+                padding:
+                    18px 10px 50px;
+
+            }
+
+
+            .main-card {
+
+                padding:
+                    25px 10px 35px;
+
+                border-radius:
+                    25px;
+
+            }
+
+
+            .memory-space {
+
+                height:
+                    350px;
+
+            }
+
+
+            .memory {
+
+                width:
+                    125px;
+
+                height:
+                    125px;
+
+                margin-left:
+                    -62.5px;
+
+                margin-top:
+                    -62.5px;
+
+                border-width:
+                    3px;
+
+            }
+
+
+            .memory:nth-child(1) {
+
+                transform:
+                    translate(-135px, -25px);
+
+            }
+
+
+            .memory:nth-child(2) {
+
+                transform:
+                    translate(15px, -90px);
+
+            }
+
+
+            .memory:nth-child(3) {
+
+                transform:
+                    translate(15px, 80px);
+
+            }
+
+
+            .memory-space::after {
+
+                width:
+                    230px;
+
+                height:
+                    230px;
+
+            }
+
+
+            .memory-space::before {
+
+                width:
+                    80px;
+
+                height:
+                    80px;
+
+                font-size:
+                    30px;
+
+            }
+
+
+            #messageBox {
+
+                width:
+                    95%;
+
+                padding:
+                    20px;
+
+            }
+
+
+            .final-message {
+
+                font-size:
+                    17px;
+
+                line-height:
+                    1.65;
+
+            }
+
+
+            button {
+
+                padding:
+                    10px 17px;
+
+                font-size:
+                    14px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         MAIN CARD
+    ===================================================== -->
+
+    <div class="main-card">
+
+
+        <h1 class="title">
+            For My Januuu 💜
+        </h1>
+
+
+        <div class="subtitle">
+            A little something made only for my rasgula  ✨
+        </div>
+
+
+        <!-- MESSAGE -->
+
+        <div id="messageBox">
+            Click    <strong>   Next </strong>    to start 💜
+        </div>
+
+
+        <!-- BUTTONS -->
+
+        <div class="controls">
+
+            <button
+                id="prevBtn"
+                disabled
+            >
+                ◀ Prev
+            </button>
+
+
+            <button
+                id="nextBtn"
+            >
+                Next ▶
+            </button>
+
+        </div>
+
+
+        <div
+            class="music-status"
+            id="musicStatus"
+        >
+            🎵 Music will start when you press Next
+        </div>
+
+
+        <!-- =================================================
+             MEMORIES
+        ================================================= -->
+
+        <div class="memories-title">
+            Our Memories 💜
+        </div>
+
+
+        <div class="memories-subtitle">
+            A few moments worth keeping ✨
+        </div>
+
+
+        <div class="memory-space">
+
+
+            <div class="memory">
+
+                <img
+                    src="janu1.jpg"
+                    alt="Janu memory 1"
+                >
+
+            </div>
+
+
+            <div class="memory">
+
+                <img
+                    src="janu2.jpg"
+                    alt="Janu memory 2"
+                >
+
+            </div>
+
+
+            <div class="memory">
+
+                <img
+                    src="janu3.jpg"
+                    alt="Janu memory 3"
+                >
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         AUDIO
+    ===================================================== -->
+
+    <audio
+        id="bgmusic"
+        loop
+        preload="auto"
+        playsinline
+    >
+
+        <source
+            src="song.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <!-- =====================================================
+         LIGHTBOX
+    ===================================================== -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+    >
+
+        <img
+            id="lightboxImg"
+            src=""
+            alt="Expanded memory"
+        >
+
+    </div>
+
+
+    <script>
+
+
+        /* =====================================================
+           MESSAGES
+        ===================================================== */
+
+        const messages = [
+
+            `Click <strong> Next </strong>  to start 💜`,
+
+
+            `Do you know why I made this little website for you? ✨`,
+
+
+            `Because you are someone who is really special to me. 💜`,
+
+
+            `Some people come into our lives and quietly become important. 🌸`,
+
+
+            `You are one of those people, Janu. ❤️`,
+
+
+            `I hope this little surprise makes you smile today. 😊`,
+
+
+            `
+            <span class="final-message">
+
+                Khop khun mak mak tee hai phom a phai.
+                <br>
+
+                Khop khun, khop khun, Inaya.
+                <br><br>
+
+                Khop khun mak mak tee hai phom a phai
+                hai kap thuk khwam phit phlat khong phom,
+                <br>
+
+                tee hai okat nee kap phom,
+                <br>
+
+                tee yang lueak phom nai ton tee phom
+                kamlang patiset khun,
+                <br>
+
+                lae tee yang klap ma ha phom.
+                <br><br>
+
+                Khop khun mak mak, Inaya.
+                <br><br>
+
+                Lae jam wai samer na,
+                phom pen khong khun thang mot.
+                <br><br>
+
+                Phom rak khun.
+                <br>
+
+                Phom rak khun mak mak. ❤️
+
+            </span>
+            `
+
+        ];
+
+
+        /* =====================================================
+           VARIABLES
+        ===================================================== */
+
+        let currentMessage = 0;
+
+        let musicStarted = false;
+
+
+        const messageBox =
+            document.getElementById(
+                "messageBox"
+            );
+
+
+        const prevBtn =
+            document.getElementById(
+                "prevBtn"
+            );
+
+
+        const nextBtn =
+            document.getElementById(
+                "nextBtn"
+            );
+
+
+        const music =
+            document.getElementById(
+                "bgmusic"
+            );
+
+
+        const musicStatus =
+            document.getElementById(
+                "musicStatus"
+            );
+
+        music.addEventListener("error", function () {
+            console.error("Audio element error:", music.error);
+            musicStatus.textContent =
+                "🎵 Could not load song.mp3 — check the file name and MP3.";
+        });
+
+        music.addEventListener("canplay", function () {
+            console.log("song.mp3 is ready to play.");
+        });
+
+
+        /* =====================================================
+           START MUSIC
+        ===================================================== */
+
+        function startMusic() {
+
+            if (musicStarted) {
+                return;
+            }
+
+            // Keep the play() call directly inside the user's gesture.
+            // This is the most reliable way to satisfy browser audio policies.
+            music.muted = false;
+            music.volume = 1.0;
+
+            const playPromise = music.play();
+
+            if (playPromise !== undefined) {
+
+                playPromise
+                    .then(function () {
+
+                        musicStarted = true;
+
+                        musicStatus.textContent =
+                            "🎵 Playing our song 💜";
+
+                    })
+                    .catch(function (error) {
+
+                        console.error("Audio play() failed:", error);
+                        console.error(
+                            "Audio readyState:",
+                            music.readyState,
+                            "networkState:",
+                            music.networkState,
+                            "error:",
+                            music.error
+                        );
+
+                        let reason = "Music could not start.";
+
+                        if (error && error.name === "NotAllowedError") {
+                            reason =
+                                "Browser blocked audio. Check Brave's sound/autoplay permission.";
+                        }
+                        else if (error && error.name === "NotSupportedError") {
+                            reason =
+                                "This MP3 cannot be played by the browser.";
+                        }
+                        else if (music.error) {
+                            reason =
+                                "The song file could not be loaded. Check song.mp3.";
+                        }
+
+                        musicStatus.textContent =
+                            "🎵 " + reason;
+
+                    });
+            }
+        }
+
+        // Start audio at pointer-down as an extra measure. This happens
+        // before the normal click event while the user gesture is active.
+        nextBtn.addEventListener(
+            "pointerdown",
+            function () {
+                startMusic();
+            },
+            { passive: true }
+        );
+        /* =====================================================
+           UPDATE MESSAGE
+        ===================================================== */
+
+        function updateMessage() {
+
+
+            messageBox.innerHTML =
+                messages[currentMessage];
+
+
+            prevBtn.disabled =
+                currentMessage === 0;
+
+
+            if (
+                currentMessage ===
+                messages.length - 1
+            ) {
+
+                nextBtn.textContent =
+                    "Replay ⟳";
+
+
+                createHearts();
+
+            }
+
+            else {
+
+                nextBtn.textContent =
+                    "Next ▶";
+
+            }
+
+
+            /* Restart animation */
+
+            messageBox.style.animation =
+                "none";
+
+
+            void messageBox.offsetWidth;
+
+
+            messageBox.style.animation =
+                "messageIn .5s ease";
+
+        }
+
+
+        /* =====================================================
+           NEXT BUTTON
+        ===================================================== */
+
+        nextBtn.addEventListener(
+            "click",
+            function () {
+
+
+                /*
+                    IMPORTANT:
+
+                    Because music.play() is called
+                    directly inside the user's click
+                    event, the browser is much more
+                    likely to allow autoplay.
+                */
+
+                // Fallback for keyboard/click activation.
+                startMusic();
+
+                if (
+                    currentMessage <
+                    messages.length - 1
+                ){
+
+                    currentMessage++;
+
+                }
+
+                else {
+
+                    currentMessage = 0;
+
+                }
+
+
+                updateMessage();
+
+            }
+        );
+
+
+        /* =====================================================
+           PREVIOUS BUTTON
+        ===================================================== */
+
+        prevBtn.addEventListener(
+            "click",
+            function () {
+
+
+                if (
+                    currentMessage > 0
+                ) {
+
+                    currentMessage--;
+
+                    updateMessage();
+
+                }
+
+            }
+        );
+
+
+        /* =====================================================
+           FALLING HEARTS
+        ===================================================== */
+
+        function createHearts() {
+
+
+            for (
+                let i = 0;
+                i < 30;
+                i++
+            ) {
+
+
+                const heart =
+                    document.createElement(
+                        "div"
+                    );
+
+
+                heart.className =
+                    "heart";
+
+
+                const heartTypes = [
+
+                    "💜",
+                    "💖",
+                    "💕",
+                    "✨",
+                    "🌸"
+
+                ];
+
+
+                heart.textContent =
+                    heartTypes[
+                        Math.floor(
+                            Math.random() *
+                            heartTypes.length
+                        )
+                    ];
+
+
+                heart.style.left =
+                    Math.random() *
+                    100 +
+                    "vw";
+
+
+                heart.style.animationDuration =
+                    (
+                        2 +
+                        Math.random() * 3
+                    ) +
+                    "s";
+
+
+                heart.style.fontSize =
+                    (
+                        18 +
+                        Math.random() * 18
+                    ) +
+                    "px";
+
+
+                document.body.appendChild(
+                    heart
+                );
+
+
+                setTimeout(
+                    function () {
+
+                        heart.remove();
+
+                    },
+                    5500
+                );
+
+            }
+
+        }
+
+
+        /* =====================================================
+           IMAGE LIGHTBOX
+        ===================================================== */
+
+        const lightbox =
+            document.getElementById(
+                "lightbox"
+            );
+
+
+        const lightboxImg =
+            document.getElementById(
+                "lightboxImg"
+            );
+
+
+        const images =
+            document.querySelectorAll(
+                ".memory img"
+            );
+
+
+        images.forEach(
+            function (image) {
+
+
+                image.addEventListener(
+                    "click",
+                    function () {
+
+
+                        lightboxImg.src =
+                            image.src;
+
+
+                        lightbox.classList.add(
+                            "show"
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* Close enlarged image */
+
+        lightbox.addEventListener(
+            "click",
+            function () {
+
+                lightbox.classList.remove(
+                    "show"
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           INITIAL STATE
+        ===================================================== */
+
+        updateMessage();
+
+
+    </script>
+
+
+</body>
+
+</html>
